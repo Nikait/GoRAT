@@ -34,6 +34,7 @@ var (
 
 func main() {
 	command("cls")
+	logo()
 	server, err := net.Listen("tcp", IP+":"+PORT)
 	if err != nil {
 		go_error("error start server :(")
@@ -275,4 +276,22 @@ func helpmenu() {
 	CommPrint("upfile", "upload file")
 	CommPrint("crypt", "crypt file")
 	CommPrint("sysinfo", "all system information")
+}
+
+func logo() {
+	Blue.Print("_________  ")
+	Magenta.Println("	 ____  ____  _____")
+	Blue.Print("__  ____/_____")
+	Magenta.Println("	/  __\\/  _ \\/__ __\\")
+	Blue.Print("_  / __ _  __ \\")
+	Magenta.Println("	|  \\/|| / \\|  / \\")
+	Blue.Print("/ /_/ / / /_/ /")
+	Magenta.Println("	|    /| |-||  | |")
+	Blue.Print("\\____/  \\____/")
+	Magenta.Println("	\\_/\\_\\\\_/ \\|  \\_/")
+	Green.Print("\t\t\t     v ")
+	Red.Println("1.0")
+	fmt.Print("coded by ")
+	Green.Print(" >> ")
+	Magenta.Println("nikait")
 }
