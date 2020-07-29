@@ -24,28 +24,28 @@ you can also change the PORT in client.go and server.go to the same one.
 ## GoRAT features
 [Autorun]
 
-[ pwd ]       => find out current directory
+|   command   |          description           |
+| ----------- |:------------------------------:|
+|     pwd     |  find out current directory    |
+|     ls      |  look at some directory        |
+|     rm      |  delete a file                 |
+|    rmdir    |  delete a directory            |
+|    file     |  download file from victim up 
+                 to 65 kb                      |
+|  ifconfig   |  network information           |
+|   upfile    |  upload file to victim up to 
+                 65 kb                         |
+|   sysinfo   |  all system information        |
+|  keylogger  |  activate keylogger            |
+|   crypt     |  encryption using AES. you have 
+                 two options for encryption:
+                 encryption of one file or 
+                 directory, if you choose to
+                 encrypt a directory, all files
+                 in it will be encrypted, but
+                 internal directories will not
+                 be decrypted                  |
 
-[ ls ]        => look at some directory
-
-[ rm ]        => delete a file
-
-[ rmdir ]     => delete a directory
-
-[ file ]      => download file from victim up to 65 kb
-
-[ ifconfig ]  => network information
-
-[ upfile ]    => upload file to victim up to 65 kb
-
-[ sysinfo ]   => all system information
-
-[ keylogger ] => activate keylogger
-
-[ crypt ]     => encryption using AES 
-you have two options for encryption:
-encryption of one file or directory, if you choose to encrypt a directory,
-all files in it will be encrypted, but internal directories will not be decrypted
 
 ## Donate
 
@@ -57,3 +57,40 @@ all files in it will be encrypted, but internal directories will not be decrypte
 ***
     ethereum:
     0x189a9436b2fbBd0b1C3927E8a398379DBb7105AA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
