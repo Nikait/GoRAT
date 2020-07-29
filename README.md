@@ -28,7 +28,7 @@ you can also change the PORT in client.go and server.go to the same one.
 [Autorun]
 
 |   command   |                                     description                                    |
-| ----------- |:----------------------------------------------------------------------------------:|
+| ----------- |:-----------------------------------------------------------------------------------|
 |     pwd     |  find out current directory                                                        |
 |     ls      |  look at some directory                                                            |
 |     rm      |  delete a file                                                                     |
