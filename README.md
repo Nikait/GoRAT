@@ -1,4 +1,4 @@
-## GoRAT 1.2.2
+## GoRAT 1.3
 ⚙️🗡️GoRAT is a powerful remote access trojan for windows 7, 8 and 10 operating systems with many features
 
 
@@ -41,6 +41,7 @@ you can also change the PORT in client.go and server.go to the same one.
 |   crypt     |  encryption using AES. you have two options for encryption: encryption of one file |
 |             |  or directory, if you choose to encrypt a directory, all files in it will be       |
 |             |  encrypted, but internal directories will not be decrypted                         |
+|  shutdown   |  shutting down the victim's computer                                               |
 
 
 ## Donate
